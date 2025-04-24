@@ -1,0 +1,79 @@
+/* Пользовательские стили для элементов, которые нельзя легко оформить с помощью Tailwind */
+.video-card:hover .play-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Стили для аватара комментария */
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+/* Стили для активной ссылки в боковой панели */
+.sidebar-link.active {
+    background-color: #ebf4ff;
+    border-left: 4px solid #4299e1;
+    color: #e616a0;
+}
+
+/* Стили для наведения на ссылку в боковой панели, если она не активна */
+.sidebar-link:hover:not(.active) {
+    background-color: #f7fafc;
+}
+
+/* Анимация для модального окна */
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Класс для анимации модального окна */
+.modal-animation {
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+/* Пользовательские стили для скроллбара */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Стили для контента вкладок администратора */
+.admin-tab-content {
+    display: none;
+}
+
+/* Стили для активного контента вкладок администратора */
+.admin-tab-content.active {
+    display: block;
+}
+
+/* Стили для страниц */
+.page {
+    display: none;
+}
+
+/* Стили для активной страницы */
+.page.active {
+    display: block;
+}
